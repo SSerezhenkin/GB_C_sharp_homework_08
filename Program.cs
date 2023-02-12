@@ -41,7 +41,14 @@ switch (task)
         Task02.Answer(arr02);
         break;
     case 3:
-        Task03.Start();
+        var matrix01 = GenerateRandomArray(2, 2);
+        PrintArray(matrix01);
+        System.Console.WriteLine();
+        var matrix02 = GenerateRandomArray(2, 2);
+        PrintArray(matrix02);
+        System.Console.WriteLine();
+        var matrix03 = Task03.Answer(matrix01, matrix02);
+        PrintArray(matrix03);
         break;
     default:
         System.Console.WriteLine("Такой задачи нет");
