@@ -36,7 +36,9 @@ switch (task)
         PrintArray(sorted_arr01);
         break;
     case 2:
-        Task02.Start();
+        var arr02 = GenerateRandomArray(4, 4);
+        PrintArray(arr02);
+        Task02.Answer(arr02);
         break;
     case 3:
         Task03.Start();
